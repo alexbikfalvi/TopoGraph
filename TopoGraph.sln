@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopoGraph", "TopoGraph\TopoGraph.csproj", "{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetApi", "..\DotNetApi\DotNetApi\DotNetApi.csproj", "{475F767E-2288-4E56-9B90-179A10DCAB49}"
+EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{475F767E-2288-4E56-9B90-179A10DCAB49} = {475F767E-2288-4E56-9B90-179A10DCAB49}
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962} = {52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
+		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{475F767E-2288-4E56-9B90-179A10DCAB49}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.Debug|Any CPU.ActiveCfg = SingleImage
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.DVD-5|Any CPU.Build.0 = DVD-5
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.Release|Any CPU.ActiveCfg = SingleImage
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.Release|Any CPU.Build.0 = SingleImage
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{A5896D4F-75E3-4E35-8CF9-23C51DD1BC5C}.SingleImage|Any CPU.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

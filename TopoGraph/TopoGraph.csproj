@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52E6DBC4-0CBF-4C03-BAAF-23B6FD47D962}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TopoGraph</RootNamespace>
+    <AssemblyName>TopoGraph</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config.cs" />
+    <Compile Include="Controls\ControlData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlData.Designer.cs">
+      <DependentUpon>ControlData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlDataset.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlDataset.Designer.cs">
+      <DependentUpon>ControlDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlTopology.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ControlTopology.Designer.cs">
+      <DependentUpon>ControlTopology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDownload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDownload.Designer.cs">
+      <DependentUpon>FormDownload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTerms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTerms.Designer.cs">
+      <DependentUpon>FormTerms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTopology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTopology.Designer.cs">
+      <DependentUpon>FormTopology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Topology.cs" />
+    <Compile Include="TopologyList.cs" />
+    <Compile Include="TopologySkitter.cs" />
+    <EmbeddedResource Include="Controls\ControlData.resx">
+      <DependentUpon>ControlData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlDataset.resx">
+      <DependentUpon>ControlDataset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ControlTopology.resx">
+      <DependentUpon>ControlTopology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDownload.resx">
+      <DependentUpon>FormDownload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTerms.resx">
+      <DependentUpon>FormTerms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTopology.resx">
+      <DependentUpon>FormTopology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DotNetApi\DotNetApi\DotNetApi.csproj">
+      <Project>{475f767e-2288-4e56-9b90-179a10dcab49}</Project>
+      <Name>DotNetApi</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServersDatabase_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServersDatabase_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServersDatabase_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ServersDatabase_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Topology_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Topology_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Topology_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Topology_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeDownload_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeDownload_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeDownload_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeDownload_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeError_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeError_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeError_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeError_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeSuccess_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeSuccess_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeSuccess_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeSuccess_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeWarning_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeWarning_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeWarning_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GlobeWarning_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SkitterTerms.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Database_48.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

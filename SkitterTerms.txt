@@ -1,0 +1,7 @@
+Acceptable Use Policy for the files of the Skitter AS Links Dataset
+
+1. At the end of the research, or semi-annually (which ever is more frequent), a summary of the research and any findings/conclusions will be reported to CAIDA. If any research is described on the WWW, a URL will be provided. This information is primarily used in reports to our funding agencies.
+2. In so far as possible, research findings and conclusions using the topology data will be published and/or made publicly available
+3. All users who publish a document (including web pages and papers) using data from the topology data must provide CAIDA with a copy of the publication.
+4. All users who publish a document (including web pages, and papers) using data from this dataset must cite: The Skitter AS Links Dataset - < dates used >, Bradley Huffaker, Young Hyun, Dan Andersen, and kc claffy, http://www.caida.org/data/active/skitter_aslinks_dataset.xml.
+5. All users who create a publicly available presentation using data from this dataset must provide CAIDA with a copy of the presentation and must use the full name of the dataset ("The Skitter AS Links Dataset") in the presentation. Users are further encouraged, but not required, to include the URL for the dataset (http://www.caida.org/data/active/skitter_aslinks_dataset.xml) in their presentation.
